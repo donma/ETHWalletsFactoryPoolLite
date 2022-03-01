@@ -59,7 +59,7 @@ namespace ETHWalletsFactoryPoolLite
         /// <summary>
         /// Auzre Blob Table Connection String 
         /// </summary>
-        public readonly static string _BlobConnectionString = "";
+        public readonly static string _BlobConnectionString = "DefaultEndpointsProtocol=https;AccountName=....";
 
         public static No2verse.AzureTable.Base.AzureTableRole _AzRole = new No2verse.AzureTable.Base.AzureTableRole("ETHWALLETPOOL", new No2verse.AzureTable.AzureStorageSettings
         {
