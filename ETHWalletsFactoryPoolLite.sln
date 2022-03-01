@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETHWalletsFactoryPoolLite", "ETHWalletsFactoryPoolLite\ETHWalletsFactoryPoolLite.csproj", "{1171F53B-89C0-452F-BAB0-66364C377E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum", "Nethereum\Nethereum.csproj", "{A664DDD8-ADD1-4B08-AC74-4A785E9BCB76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1171F53B-89C0-452F-BAB0-66364C377E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1171F53B-89C0-452F-BAB0-66364C377E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1171F53B-89C0-452F-BAB0-66364C377E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1171F53B-89C0-452F-BAB0-66364C377E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A664DDD8-ADD1-4B08-AC74-4A785E9BCB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A664DDD8-ADD1-4B08-AC74-4A785E9BCB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A664DDD8-ADD1-4B08-AC74-4A785E9BCB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A664DDD8-ADD1-4B08-AC74-4A785E9BCB76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA68DD1D-DE75-4A2B-8D12-451427FE28E1}
+	EndGlobalSection
+EndGlobal
