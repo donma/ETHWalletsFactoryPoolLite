@@ -31,25 +31,25 @@ namespace ETHWalletsFactoryPoolLite
 
 
         /// <summary>
-        /// ÀË¬d¥Ø«e¨«¨ìªº Pointer µM«á°µÀx¦s
+        /// æª¢æŸ¥ç›®å‰èµ°åˆ°çš„ Pointer ç„¶å¾Œåšå„²å­˜
         /// </summary>
         private static Timer _PointerChecker { get; set; }
 
 
         /// <summary>
-        /// ¢ß ¼È¦s¼Æ¶q
+        /// ä¸€æ¬¡ Queue æš«å­˜æ•¸é‡
         /// </summary>
         private readonly static int _SwapCount = 50;
 
 
         /// <summary>
-        /// µù°Oµü ¡A¦Û¦æ§ó§ï
+        /// è¨»è¨˜è© ï¼Œè‡ªè¡Œæ›´æ”¹
         /// </summary>
-        public readonly static string Words = "·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â ·í ³Â";
+        public readonly static string Words = "ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº» ç•¶ éº»";
 
 
         /// <summary>
-        /// ±K½X ¦Û¦æ§ó§ï
+        /// å¯†ç¢¼ è‡ªè¡Œæ›´æ”¹
         /// </summary>
         public readonly static string Password = "password";
 
@@ -70,7 +70,7 @@ namespace ETHWalletsFactoryPoolLite
 
 
         /// <summary>
-        /// ªì©l¤Æ°_©l¼Æ­È
+        /// åˆå§‹åŒ–èµ·å§‹æ•¸å€¼
         /// </summary>
         private void InitPointerFromFile()
         {
@@ -91,8 +91,8 @@ namespace ETHWalletsFactoryPoolLite
 
 
         /// <summary>
-        /// ¬O§_¥¿¦b°õ¦æÀË¬d
-        /// ¦pªG¥¿¦b°õ¦æ¸õ¶}
+        /// æ˜¯å¦æ­£åœ¨åŸ·è¡Œæª¢æŸ¥
+        /// å¦‚æœæ­£åœ¨åŸ·è¡Œè·³é–‹
         /// </summary>
         private static bool IsRunningChecker { get; set; }
 
@@ -115,7 +115,7 @@ namespace ETHWalletsFactoryPoolLite
         }
 
         /// <summary>
-        /// ­«·s±Ò°ÊÀË¬dªº Timer
+        /// é‡æ–°å•Ÿå‹•æª¢æŸ¥çš„ Timer
         /// </summary>
         public static void RestartTimerChecker()
         {
@@ -130,7 +130,7 @@ namespace ETHWalletsFactoryPoolLite
                 IsRunningChecker = true;
 
                 int tmp = -1;
-                //ÀË¬d¥Ø«e¨«¨ì­ş¸Ì¨Ã¥B§Û¼g¦^ file.
+                //æª¢æŸ¥ç›®å‰èµ°åˆ°å“ªè£¡ä¸¦ä¸”æŠ„å¯«å› file.
                 if (_IndexPointerSwap.TryPeek(out tmp))
                 {
                     File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + "COUNT", tmp.ToString());
@@ -149,13 +149,13 @@ namespace ETHWalletsFactoryPoolLite
         }
 
         /// <summary>
-        /// ªì©l¤Æ¶ñ¤J¦h¤Öªºbuffer pointer.
+        /// åˆå§‹åŒ–å¡«å…¥å¤šå°‘çš„buffer pointer.
         /// </summary>
         /// <param name="num"></param>
         private void FillPointer(int num)
         {
-            //¬°¤FÁ×§K¤¤¶¡¥i¯à³Q¤§«e¥Î¹L
-            //©Ò¥H¥²¶·­n¥Î ¤¤¶¡ªº buffer ¼Æ©¹«á¥[¤J
+            //ç‚ºäº†é¿å…ä¸­é–“å¯èƒ½è¢«ä¹‹å‰ç”¨é
+            //æ‰€ä»¥å¿…é ˆè¦ç”¨ ä¸­é–“çš„ buffer æ•¸å¾€å¾ŒåŠ å…¥
             var nP = _IndexPointer + 1 + _SwapCount;
             for (var i = (nP); i < (nP + num); i++)
             {
@@ -166,7 +166,7 @@ namespace ETHWalletsFactoryPoolLite
 
 
         /// <summary>
-        /// ¨ú±o¤@­Ó¼Æ­È
+        /// å–å¾—ä¸€å€‹æ•¸å€¼
         /// </summary>
         /// <returns></returns>
         public static int GetOneValue()
